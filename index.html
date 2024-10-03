@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Age calculator app</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header
+      class="vh-100 bg-secondary d-flex justify-content-center align-items-center"
+    >
+      <div class="calcContent bg-white d-flex flex-column">
+        <form action="" class="d-flex w-100 p-4">
+          <div class="day d-flex flex-column">
+            <label for="d" class="fw-bold">DAY</label>
+            <input id="d" type="number" class="form-control w-75 mt-2 me-1" />
+            <div class="error-message"></div>
+          </div>
+          <div class="month d-flex flex-column">
+            <label for="m" class="fw-bold">MONTH</label>
+            <input id="m" type="number" class="form-control w-75 mt-2 me-1" />
+            <div class="error-message"></div>
+          </div>
+          <div class="year d-flex flex-column">
+            <label for="y" class="fw-bold">YEAR</label>
+            <input id="y" type="number" class="form-control w-75 mt-2 me-1" />
+            <div class="error-message"></div>
+          </div>
+        </form>
+        <button class="butn">
+          <img src="./assets/images/icon-arrow.svg" alt="button Icon" />
+        </button>
+        <div class="calcDetails p-5">
+          <p><span class="years">--</span>years</p>
+          <p><span class="months">--</span>months</p>
+          <p><span class="days">--</span>days</p>
+        </div>
+      </div>
+    </header>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
+<!-- Day
+DD
+
+Month
+MM
+
+Year
+YYYY
+
+-- years
+-- months
+-- days -->
